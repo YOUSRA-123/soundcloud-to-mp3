@@ -1,3 +1,5 @@
+u = https://soundcloud.com/laytoofficial/ghost-town
+
 all: init run
 
 init:
@@ -6,7 +8,7 @@ init:
 	npm i
 
 run:
-	npm start
+	npm start $(u)
 
 clean:
 	rm -f *.html *.mp3
